@@ -12,21 +12,24 @@
     .add-content{
         padding: 2rem;
     }
-
+    h3{
+        min-height: 10.8rem;
+    }
     h3,p{
         margin: 0;
     }
-    .price{
-        color: $verde;
-        font-size: 3rem;
-        font-weight: $bold;
-    }
+}
+.price{
+    color: $verde;
+    font-size: 3rem;
+    font-weight: $bold;
 }
 
 .icons-features{
     display: flex;
     list-style: none;
     padding: 0;
+    max-width: 40rem;
     
     li{
         flex: 1;

@@ -1,0 +1,10 @@
+.btn-amarillo-block{
+    @include button($amarillo, block);
+}
+.btn-amarillo-inline{
+    @include button($amarillo, inline-block);
+}
+.btn-verde{
+    @include button($verde, inline-block);
+    margin: 2rem 0 2rem;
+}
