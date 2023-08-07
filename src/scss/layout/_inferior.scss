@@ -5,7 +5,9 @@
         column-gap: 2rem;
     }
 }
-
+.meta-info span{
+    color: $amarillo;
+}
 .entrada-blog{
     margin-bottom: 2rem;
     @include tablet{
@@ -41,8 +43,5 @@
             height: .5rem;
             background-color: $verde;
         }
-    }
-    span{
-        color: $amarillo;
     }
 }

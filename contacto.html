@@ -32,6 +32,70 @@
 
     <main class="contenedor">
         <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.avif" type="image/avif">
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <img loading="lazy" src="build/img/destacada3.jpg" alt="Imagen contacto">
+        <picture>
+
+        <h2>Llene el formulario de contacto.</h2>
+        <!-- [Inicio] Formulario -->
+        <form action="" class="form">
+            <!-- Agrupacion de datos relacionados -->
+            <fieldset> 
+                <legend>Informacion personal</legend>
+
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Nombre(s)" id="name">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="E-mail" id="email">
+
+                <label for="phone">Telefono</label>
+                <input type="tel" placeholder="Telefono" id="phone">
+                
+                <label for="msg">Menaje</label>
+                <textarea name="" id="msg" cols="30" rows="10"></textarea>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre la propiedad</legend>
+
+                <label for="quest1">¿Venta o Compra?</label>
+                <select name="quest1" id="quest1">
+                    <option value="" disabled selected> -- Seleccione --</option>
+                    <option value="buy">Comprar</option>
+                    <option value="sale">Vender</option>
+                </select>
+
+                <label for="quest2">Precio o presupuesto</label>
+                <input type="number" placeholder="Precio o presupuesto" id="quest2">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado</p>
+                <div class="contact-way">
+                    <label for="tel">Teléfono</label>
+                    <input name="contact-way" type="radio" value="telefono" id="tel">
+
+                    <label for="contact-email">Teléfono</label>
+                    <input name="contact-way" type="radio" value="telefono" id="contact-email">
+                </div>
+
+                <p>Si eligio telefono, eliga fecha y hora</p>
+                <label for="fecha">Telefono</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Telefono</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="btn-verde">
+        </form>
+        <!-- [Final] Formulario -->
     </main>
 
     <footer class="footer section">
